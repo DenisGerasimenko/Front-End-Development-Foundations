@@ -5,7 +5,7 @@ function NamedOne(first, last){
 
 NamedOne.prototype = {
     get fullName(){
-        return ${this.firstName} ${this.lastName};
+        return `${this.firstName} ${this.lastName}`;
     },
     set fullName(fn){
         var name = fn.split(' ');
