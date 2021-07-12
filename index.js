@@ -9,7 +9,7 @@ NamedOne.prototype = {
     },
     set fullName(fn){
         var name = fn.split(' ');
-        if(name.length == 2){
+        if(name.length === 2){
             this.firstName = name[0];
             this.lastName  = name[1];
         }
