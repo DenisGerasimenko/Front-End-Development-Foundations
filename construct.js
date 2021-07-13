@@ -62,6 +62,6 @@ class Vector {
     }
 
     toString() {
-        return `${this.arr.join(',')`;
+        return `(${this.arr.join(',')})`;
     }
 }
