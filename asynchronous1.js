@@ -1,7 +1,14 @@
 1. const MyPromise = class {
-    constructor (callback) {this.promise = new Promise (callback)}
-    then (fn) {this.promise.then(fn); return this}
-    synchThen (fn) {fn(); return this}
+    constructor (callback) {
+        this.promise = new Promise (callback)
+    }
+    then (fn) {
+        this.promise.then(fn); return this
+    }
+    synchThen (fn) {
+        fn();
+        return this
+    }
 }
 
 const promise = new MyPromise((resolve) => {
