@@ -21,4 +21,9 @@ class ReversePromise extends Promise {
     }
 }
 
-const revP = (new ReversePromise(res => { console.log(1); res();})).then(_ => console.log(2)).then(_ => console.log(3)).then(_ => console.log(4)).run()
+const revP = (new ReversePromise(res => {
+    console.log(1);
+    res();
+})).then(_ => console.log(2))
+    .then(_ => console.log(3))
+    .then(_ => console.log(4)).run()
