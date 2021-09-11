@@ -1,0 +1,2 @@
+performance	in adding	listene to each cell click (average value): 16,7;
+performance through event delegation(average value): 15,5;
